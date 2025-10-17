@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgicon.jpg" type="image/x-icon">
+    <title>Página Pessoal de Letícia</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #eeeeee;
+            padding-bottom: 15px;
+        }
+
+        h3 {
+            text-align: center;
+            color: #3498db;
+        }
+
+        .centralizar-imagem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        img {
+            border-radius: 50%;
+            border: 3px solid #3498db;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #3498db;
+            color: #ffffff;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Letícia Farias Veras</h1>
+        <h2>Estudante de Engenharia de Software | Apaixonada por Tecnologia e Jogos digitais.</h2>
+    </header>
+
+    <hr>
+
+    <section>
+        <h3>Sobre Mim</h3>
+        <p>Olá! Meu nome é Letícia Farias Veras e estou atualmente cursando Engenharia de Software na UNEB. Tenho um grande interesse em criar soluções inovadoras e funcionais para a sociedade. Este é o meu segundo projeto de página pessoal, onde aplico os conceitos básicos de HTML.</p>
+        <p>Nas horas vagas, gosto de explorar novas tecnologias, ler sobre programação e jogar videogame.</p>
+
+            <div class="centralizar-imagem">
+                <img src="fotoeu.jpg" alt="Uma foto pessoal de Letícia" width="200">
+            </div>
+    
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Meus Hobbies e Interesses</h3>
+        <ul>
+            <li>Programação e desenvolvimento de software</li>
+            <li>Jogos eletrônicos de FPS</li>
+            <li>Praticar esportes ao ar livre</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Minhas Metas para este Ano</h3>
+        <ol>
+            <li>Aprender HTML, CSS e JavaScript profundamente</li>
+            <li>Desenvolver meu primeiro projeto web completo</li>
+            <li>Contribuir para um projeto de código aberto no GitHub</li>
+            <li>Conseguir um estágio na área.</li>
+        </ol>
+    </section>
+
+    <hr>
+    
+    <section>
+        <h3>Minha Rotina Semanal de Estudos</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Dia da Semana</th>
+                    <th>Manhã (8h-12h)</th>
+                    <th>Tarde (14h-18h)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-feira</td>
+                    <td>Faculdade</td>
+                    <td>Trabalho</td>
+                </tr>
+                <tr>
+                    <td>Terça-feira</td>
+                    <td>Faculdade</td>
+                    <td>Trabalho</td>
+                </tr>
+                <tr>
+                    <td>Quarta-feira</td>
+                    <td>Faculdade</td>
+                    <td>Trabalho</td>
+                </tr>
+                <tr>
+                    <td>Quinta-feira</td>
+                    <td>Faculdade</td>
+                    <td>Trabalho</td>
+                </tr>
+                <tr>
+                    <td>Sexta-feira</td>
+                    <td>Faculdade</td>
+                    <td>Trabalho</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Entre em Contato</h3>
+        <form action="#" method="post">
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Enviar Mensagem</button>
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>
